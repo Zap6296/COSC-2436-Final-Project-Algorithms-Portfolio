@@ -1,0 +1,33 @@
+# Lab 3: Recursion - Lab Report
+
+## Student Information
+- **Name:** Nathaniel Tryon
+- **Date:** 02/15/2026
+
+## Recursion Concepts
+
+### Two Parts of Every Recursive Function
+1. **Base Case:** The condition under which the function does not make a recursive call, preventing infinite recursion. Example: For a factorial, the base case is when `x == 1`.
+2. **Recursive Case:** The part of the function where it calls itself with a smaller problem. Example: `x * fact(x - 1)` in a factorial function.
+
+### The Call Stack
+The call stack is a mechanism that records the function calls made during recursive execution. Each call to a recursive function adds a new frame to the stack, representing the execution context of that call. As base cases are reached, these frames are popped from the stack one by one.
+
+### Function Analysis
+| Function        | Base Case            | Recursive Case                      | Time Complexity |
+|-----------------|----------------------|-------------------------------------|-----------------|
+| `countdown`     | `i <= 0`             | `countdown(i - 1)`                  | O(n)            |
+| `fact`          | `x <= 1`             | `x * fact(x - 1)`                   | O(n)            |
+| `recursive_sum` | empty list           | `arr[0] + recursive_sum(arr[1:])`   | O(n)            |
+| `recursive_count` | empty list         | `1 + recursive_count(arr[1:])`      | O(n)            |
+| `recursive_max` | single item         | `max(arr[0], recursive_max(arr[1:]))` | O(n)            |
+
+## Reflection Questions
+
+1. **What happens if you forget the base case?**
+   - Without a base case, the recursive function will keep calling itself indefinitely until a stack overflow occurs, leading to a `RecursionError`.
+
+2. **Why is the naive Fibonacci implementation inefficient?**
+   - The naive Fibonacci implementation recalculates the same values multiple times, leading to exponential time complexity due to redundant calculations.
+
+3. **Draw the call stack for `fact(4)`:** fact(4) calls fact(3), then fact(3) calls fact(2), then fact(2) calls fact(1)
