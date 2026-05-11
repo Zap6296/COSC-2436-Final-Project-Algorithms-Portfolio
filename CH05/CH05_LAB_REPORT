@@ -1,0 +1,22 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22882847&assignment_repo_type=AssignmentRepo)
+# Lab 05: 2436 Hash Table Lab 05
+
+## Student Information
+- **Name:** Nathaniel Tryon
+- **Date:** 3/1/26
+
+## Key Concepts
+A quick why to get info tied to a name the hash function ties a number to a string and that number points to a value in an array
+
+## What I Learned
+I learned how classes work, how hash functions work and how to build a hash table 
+
+## Challenges
+The figuring out how classes work in Python since this was my first time working with a class type in python before, and a few quick lessons on a coding teaching website taught me how to work with them 
+
+## Reflection Questions
+1. What are the advantages of using a hash table?
+- No duplicate entries, quick access to values attached to strings 
+
+---
+*Complete this lab report after finishing the coding portion. Your final commit should include both working code and a completed lab report.*
